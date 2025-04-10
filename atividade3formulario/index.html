@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>atividade 3</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+    fieldset {
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin-top: 8px;
+    }
+    button {
+      margin-right: 10px;
+      padding: 8px 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Formulário de Cadastro</h1>
+
+  <form action="#" method="post">
+    
+    <fieldset>
+      <legend>Informações Pessoais</legend>
+      <label for="nome">Nome completo:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="data_nascimento">Data de Nascimento:</label>
+      <input type="date" id="data_nascimento" name="data_nascimento">
+    </fieldset>
+
+    <fieldset>
+      <legend>Gênero</legend>
+      <label><input type="radio" name="genero" value="masculino" required> <b>Masculino</b></label>
+      <label><input type="radio" name="genero" value="feminino" required> <b>Feminino</b></label>
+      <label><input type="radio" name="genero" value="outro" required> <b>Outro</b></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Interesses</legend>
+      <label><input type="checkbox" name="interesse[]" value="esporte" required> <b>Esporte</b></label>
+      <label><input type="checkbox" name="interesse[]" value="tecnologia" required> <b>Tecnologia</b></label>
+      <label><input type="checkbox" name="interesse[]" value="música" required> <b>Música</b></label>
+      <label><input type="checkbox" name="interesse[]" value="viagem" required> <b>Viagem</b></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Endereço</legend>
+      <label for="endereco">Rua:</label>
+      <input type="text" id="endereco" name="endereco">
+
+      <label for="cidade">Cidade:</label>
+      <input type="text" id="cidade" name="cidade">
+
+      <label for="estado">Estado:</label>
+      <select id="estado" name="estado">
+        <option value="">--Selecione--</option>
+        <option value="SP">São Paulo</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="MG">Minas Gerais</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Outras Informações</legend>
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required>
+
+      <label for="cor_favorita">Cor favorita:</label>
+      <input type="color" id="cor_favorita" name="cor_favorita">
+
+    
+    </fieldset>
+
+    <button type="reset"><b>Limpar</b></button>
+    <button type="submit"><b>Enviar</b></button>
+
+  </form>
+
+</body>
+</html>
